@@ -1,0 +1,10 @@
+trialnum	tgt_distance	tgt_angle	rotation	num_landmarks	aiming_landmarks	online_fb	endpoint_feedback	clamped_fb	between_blocks	breaks	stage
+1	80	60	0	0	0	0	0	0	0	0	1
+2	80	50	0	0	0	0	0	0	0	0	1
+3	80	10	0	0	0	0	0	0	0	0	1
+4	80	70	0	0	0	0	0	0	0	0	1
+5	80	80	0	0	0	0	0	0	0	0	1
+6	80	20	0	0	0	0	0	0	0	0	1
+7	80	30	0	0	0	0	0	0	0	0	1
+8	80	40	0	0	0	0	0	0	0	0	1
+9	80	70	0	0	0	0	0	0	0	0	1
