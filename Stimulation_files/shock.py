@@ -1,4 +1,3 @@
-import peripheralsManagerCompoundSerial #everything to manage labjack
 import time
 import sys
 
@@ -14,8 +13,6 @@ def distribute_shock (peripheralsmanager, shock_for):
         peripheralsmanager.shockOff()
 
 def main():
-    #creating a PheripheralsManager 
-    peripheralsmanager = peripheralsManagerCompoundSerial.PeripheralsManager()
     
     if len(sys.argv) < 2:
         print("[Error] No arguments passed in.")
@@ -29,11 +26,17 @@ def main():
         print("[Error] Argument is not an integer.")
         return
 
-    try:
-        distribute_shock(peripheralsmanager, shock_for)
-    except IOError as myerror:
-        print(myerror)
-        print('Exiting script')
+    # Laptop mode... Not connected to LabJack
+    print('[Laptop Mode] Shocking!')
+
+    ## Desktop mode... LabJack Connected
+    # try:
+    #     import peripheralsManagerCompoundSerial                                     #everything to manage labjack
+    #     peripheralsmanager = peripheralsManagerCompoundSerial.PeripheralsManager()  #creating a PheripheralsManager 
+    #     distribute_shock(peripheralsmanager, shock_for)
+    # except IOError as myerror:
+    #     print(myerror)
+    #     print('Exiting script')
 
 
 if __name__ == '__main__':

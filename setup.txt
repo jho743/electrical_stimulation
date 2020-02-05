@@ -4,11 +4,5 @@ Savings_AntiClampWash_current ('subj_name','Savings_AntiClampWash_NE_ccw_c2_','1
 -- run python from matlab
 https://www.mathworks.com/help/matlab/ref/pyenv.html
 
-
-
--- Create python executable (https://datatofish.com/executable-pyinstaller/)
-1. Run pip install pyinstaller
-2. Sudo pyinstaller --onefile pythonScriptName.py
-
 -- LabJack software
 https://labjack.com/support/software/installers/ud 

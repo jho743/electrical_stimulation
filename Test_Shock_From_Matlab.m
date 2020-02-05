@@ -5,6 +5,6 @@ disp('Begin Shock from Matlab');
 
 % pyversion
 % path = fileparts(which(test.py));
-system('python Stimulation_files/test.py')
+system('python Stimulation_files/shock.py 5')
 
 disp('Finished');
