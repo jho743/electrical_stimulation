@@ -14,12 +14,12 @@ terminal_input = strcat('python', ' ', shock_file, {' '}, num2str(num_shocks));
 
 system(char(terminal_input));
 
-make_sound(30000);
+% make_sound(30000);
 
 disp('Finished');
 
-function make_sound(x)
-    for i = 1:10
-        sound(x);
-    end
-end
+% function make_sound(x)
+%     for i = 1:10
+%         sound(x);
+%     end
+% end
