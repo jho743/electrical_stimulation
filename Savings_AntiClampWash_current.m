@@ -119,6 +119,11 @@ between_blocks = tgt_file(:,10);
 breaks = tgt_file(:,11);
 stage = tgt_file(:,12);
 
+% [Shock] shock info from target file
+shock_file = ' Stimulation_files/shock.py';
+shock_percentage = tgt_file(:,13);
+num_shocks = tgt_file(:,14);
+
 % Query the frame duration
 ifi = Screen('GetFlipInterval', window);
 
@@ -311,6 +316,14 @@ while trial <= maxtrialnum   %
         land_y = yCenter - tgt_dist(trial)*sind(land_ang);
         land_loc = [land_x;land_y];
     end
+    
+    % [Shock] place shocking code here
+    curr_shock_perc = shock_percentage(trial, 1);
+    curr_num_shocks = num_shocks(trial, 1);
+    terminal_input = strcat('python', ' ', shock_file, ' ', curr_num_shocks);
+    
+    
+%     sound(30000);
     
     % Draw home position.
     if gamephase == 0   % Searching for start location
@@ -570,7 +583,9 @@ gamephase_move(k) = gamephase;
     
     while GetSecs < nextsampletime
     end
-       
+%     for i = 1:10
+%     sound(30000);
+%     end
 end
 
 endtime = GetSecs;
