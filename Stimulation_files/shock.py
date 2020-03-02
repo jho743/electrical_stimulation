@@ -14,14 +14,10 @@ def distribute_shock (peripheralsmanager, shock_for):
 
 def main():
     #creating a PheripheralsManager 
-    try:
-        peripheralsmanager = peripheralsManagerCompoundSerial.PeripheralsManager()
-    except:
-        print('[Error] Failed connection to Labjack / Digitimer.')
-        return -1
+    peripheralsmanager = peripheralsManagerCompoundSerial.PeripheralsManager()
     
     if len(sys.argv) < 2:
-        print("[Error] No arguments passed in. Require argument(s): [Number of Shocks]")
+        print("[Error] No arguments passed in.")
         return
     
     shock_for = 0
