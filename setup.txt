@@ -1,0 +1,8 @@
+Savings_AntiClampWash_current ('subj_name','Savings_AntiClampWash_NE_ccw_c2_','1')
+
+
+-- run python from matlab
+https://www.mathworks.com/help/matlab/ref/pyenv.html
+
+-- LabJack software
+https://labjack.com/support/software/installers/ud 
