@@ -4,4 +4,4 @@
     - pip install LabJackPython
     
 2. Install LabJack driver
-    - Link: (https://labjack.com/support/software/installers/ud)
+    - Link: https://labjack.com/support/software/installers/ud
