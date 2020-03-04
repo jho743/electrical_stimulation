@@ -3,5 +3,5 @@
 1. Install u6 library 
     - pip install LabJackPython
     
-2.
-    - install LabJack driver (https://labjack.com/support/software/installers/ud)
+2. Install LabJack driver
+    - Link: (https://labjack.com/support/software/installers/ud)
