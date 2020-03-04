@@ -12,8 +12,8 @@ terminal_input = strcat('python', ' ', shock_file, {' '}, num2str(num_shocks));
 % disp('testing');
 % disp(terminal_input);
 
-system(char(terminal_input));
-
+% system(char(terminal_input));
+system('python Stimulation_files/shock.py 10');
 % make_sound(30000);
 
 disp('Finished');

@@ -1,5 +1,6 @@
 import time
 import sys
+# import peripheralsManagerCompoundSerial
 """
 	Description - Shock the user for shock_for amount of time
 	Parameters - (shock_for - the amount time you want to shock the user) 
@@ -15,7 +16,7 @@ def main():
     try:
         import peripheralsManagerCompoundSerial
     except:
-        print('[Error] Failed to import one of the modules/libraries.')
+        print('[Error] Failed to import peripheralsManagerCompoundSerial.')
         return -1
 
     try:

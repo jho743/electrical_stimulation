@@ -317,13 +317,7 @@ while trial <= maxtrialnum   %
         land_loc = [land_x;land_y];
     end
     
-    % [Shock] place shocking code here
-    curr_shock_perc = shock_percentage(trial, 1);
-    curr_num_shocks = num_shocks(trial, 1);
-    terminal_input = strcat('python', ' ', shock_file, ' ', curr_num_shocks);
-    
-    
-%     sound(30000);
+%     display(gamephase);
     
     % Draw home position.
     if gamephase == 0   % Searching for start location
@@ -552,6 +546,8 @@ while trial <= maxtrialnum   %
             trial_time(k) = 0;
             trial = trial + 1;
         end
+        % [Shock] place shocking here 
+        
     end
     
 % Draw Cursor  
