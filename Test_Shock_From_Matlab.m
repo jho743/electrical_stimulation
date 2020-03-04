@@ -13,13 +13,13 @@ terminal_input = strcat('python', ' ', shock_file, {' '}, num2str(num_shocks));
 % disp(terminal_input);
 
 % system(char(terminal_input));
-system('python Stimulation_files/shock.py 10');
+
+pyversion
+path_to_u6 = fileparts(which('u6.py'));
+if count(py.sys.path, path_to_u6) == 0
+    insert(py.sys.path, int32(0), path_to_u6);
+end
+% system('python Stimulation_files/shock.py 10');
 % make_sound(30000);
 
 disp('Finished');
-
-% function make_sound(x)
-%     for i = 1:10
-%         sound(x);
-%     end
-% end
